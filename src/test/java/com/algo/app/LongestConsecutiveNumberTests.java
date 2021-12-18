@@ -34,16 +34,15 @@ class LongestConsecutiveNumberTests {
     }
 
     @Test
-    public void shoudReturn6() {
+    public void shoudReturn0() {
         // ARRANGE
-        final int[] numbersArray = new int[]{ 0, 3, 7, 2, 5, 2, 4, 4, 0, 1 };
+        final int[] numbersArray = new int[]{};
 
         // ACT
         final var manager = new LongestConsecutiveNumber();
         final var actual = manager.longestConsecutive(numbersArray);
 
         // ASSERT
-        assertEquals(6, actual);
-
+        assertEquals(0, actual);
     }
 }

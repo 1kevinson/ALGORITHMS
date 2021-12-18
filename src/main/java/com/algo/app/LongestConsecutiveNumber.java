@@ -18,6 +18,11 @@ public class LongestConsecutiveNumber {
     private class AlgoTools {
 
         private void getConsecutiveNumbers(int[] numbers) {
+            if (numbers.length == 0) {
+                LongestConsecutiveNumber.this.counter = 0;
+                return;
+            }
+
             final var reversedSortedArray = this.sortedAndReverse(numbers);
 
             for (int i = reversedSortedArray.length - 1; i > 0; i--) {
