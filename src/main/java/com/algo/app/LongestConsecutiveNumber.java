@@ -31,10 +31,10 @@ public class LongestConsecutiveNumber {
                     continue;
                 }
 
-                if (reversedSortedArray[i] + 1 == reversedSortedArray[i - 1]) {
-                    LongestConsecutiveNumber.this.counter++;
-                } else {
+                if (reversedSortedArray[i] + 1 != reversedSortedArray[i - 1]) {
                     break;
+                } else {
+                    LongestConsecutiveNumber.this.counter++;
                 }
             }
         }

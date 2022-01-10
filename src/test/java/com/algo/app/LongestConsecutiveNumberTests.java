@@ -9,7 +9,7 @@ class LongestConsecutiveNumberTests {
 
     @Test
     @DisplayName("Should return 4")
-    public void shouldReturn4() {
+    void shouldReturn4() {
         // ARRANGE
         final int[] numbersArray = new int[]{ 100, 4, 200, 1, 3, 2 };
 
@@ -23,7 +23,7 @@ class LongestConsecutiveNumberTests {
 
     @Test
     @DisplayName("Should return 9")
-    public void shoudReturn9() {
+    void shoudReturn9() {
         // ARRANGE
         final int[] numbersArray = new int[]{ 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
 
@@ -38,7 +38,7 @@ class LongestConsecutiveNumberTests {
 
     @Test
     @DisplayName("Should return 0")
-    public void shoudReturn0() {
+    void shoudReturn0() {
         // ARRANGE
         final int[] numbersArray = new int[]{};
 
