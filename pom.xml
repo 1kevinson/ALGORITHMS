@@ -16,6 +16,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <sonar.host.url>http://sonarqube-dev.com:9000</sonar.host.url>
+    <sonar.language>java</sonar.language>
+    <sonar.scm.provider>git</sonar.scm.provider>
   </properties>
 
   <dependencies>
@@ -85,6 +88,11 @@
                   <source>10</source>
                   <target>10</target>
               </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.2</version>
           </plugin>
       </plugins>
   </build>
